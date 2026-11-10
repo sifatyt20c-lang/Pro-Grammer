@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:20-alpine
+    user: node
+    working_dir: /usr/src/app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
